@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "typegen": "pocketbase-typegen --db ./pocketbase/pb_data/data.db --out ./src/pocketbase-types.ts",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
@@ -30,6 +31,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "npm-run-all2": "^6.2.0",
+    "pocketbase-typegen": "^1.2.1",
     "postcss": "^8.4.45",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.10",

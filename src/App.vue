@@ -11,7 +11,11 @@ import { RouterLink, RouterView } from 'vue-router/auto'
   <h1 class="text-indigo-700">Template principale (Menu/Footer...)</h1>
   </div>
   <main>
-    <RouterView/>
+    <RouterView v-slot="{ Component }">
+      <Suspense>
+        <component :is="Component" :key="$route.path" />
+      </Suspense>
+    </RouterView>
   </main>
 
 </template>
