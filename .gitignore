@@ -33,3 +33,6 @@ typed-router.d.ts
 # PocketBase
 /pocketbase/*
 !/pocketbase/pb_migrations
+
+#.env.production
+.env.production
