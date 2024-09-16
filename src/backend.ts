@@ -16,6 +16,11 @@ export async function loginWithGitHub() {
   console.log('loginWithGitHub authData', authData)
 }
 
+export async function loginWithGoogle() {
+  const authData = await pb.collection('users').authWithOAuth2({ provider: 'google' })
+  console.log('logWithGoogle authData', authData)
+}
+
 export const user = ref<UsersResponse | null>(null)
 pb.authStore.onChange((token, model) => {
   user.value = model as UsersResponse
