@@ -13,7 +13,7 @@ export function logout() {
 
 export async function loginWithGitHub() {
   const authData = await pb.collection('users').authWithOAuth2({ provider: 'github' })
-  console.log('logWithGitHub authData', authData)
+  console.log('loginWithGitHub authData', authData)
 }
 
 export const user = ref<UsersResponse | null>(null)
