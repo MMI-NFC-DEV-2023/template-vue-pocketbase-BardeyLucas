@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase'
-import { type TypedPocketBase, type UsersRecord, type UsersResponse } from './pocketbase-types.js'
+import { type TypedPocketBase, type UsersResponse } from './pocketbase-types.js'
 import { ref } from 'vue'
 
 export const pb = new PocketBase(import.meta.env.VITE_URL_POCKETBASE) as TypedPocketBase;
